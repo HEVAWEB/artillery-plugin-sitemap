@@ -1,0 +1,21 @@
+{
+  "name": "artillery-plugin-sitemap",
+  "description": "Use sitemap URL with Artillery",
+  "version": "1.0.0",
+  "author":  "HEVA",
+  "keywords": [
+    "sitemap",
+    "security",
+    "artillery"
+  ],
+  "main": "index.js",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.hevaweb.com:web/components/artillery-plugin-sitemap.git"
+  },
+  "dependencies": {
+    "debug": "^2.6.6",
+    "sitemapper": "^2.2.0"
+  }
+}

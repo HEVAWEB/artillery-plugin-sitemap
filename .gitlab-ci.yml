@@ -1,0 +1,16 @@
+image: gitlab.hevaweb.com:4567/heva/docker-images/php-node-deployer:php7.2
+
+stages:
+  - publish
+
+cache:
+  key: ${CI_COMMIT_SHA}
+
+publish:
+  stage: publish
+  only:
+    - /^(\d+\.)?(\d+\.)?(\*|\d+)$/
+  except:
+    - branches
+  script:
+    - npm publish --registry https://npm.hevadev.com
