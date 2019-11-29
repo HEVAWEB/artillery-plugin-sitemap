@@ -1,4 +1,6 @@
 # Artillery Sitemap
+![Publish Badge](https://github.com/HEVAWEB/artillery-plugin-sitemap/workflows/Publish/badge.svg)
+
 This [Artillery](https://artillery.io/) plugin allows you to get all URL from a sitemap then call randoms URL from this one.
 
 ## Usage
