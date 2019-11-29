@@ -1,14 +1,19 @@
 # Artillery Sitemap
-
-Un plugin pour [Artillery](https://artillery.io/) permettant de pointer sur des URL randoms provenant du sitemap d'un site.
+This [Artillery](https://artillery.io/) plugin allows you to get all URL from a sitemap then call randoms URL from this one.
 
 ## Usage
 
-Simple exemple :
+### Install
+
+`npm install artillery-plugin-sitemap`
+
+### Usage
+
+Simple example :
 
 ``` yaml
 config:
-  target: "https://toto.test/sitemap.xml" # Renseigner le sitemap ici
+  target: "https://toto.test/sitemap.xml" # Set the sitemap there
   phases:
     - duration: 20
       arrivalRate: 1
@@ -18,7 +23,7 @@ scenarios:
   - flow:
       - loop:
           - get:
-              url: "/" # Il est nécessaire de renseigner une URL (celle-ci sera remplacée par l'URL random)
+              url: "/" # We should assign a useless URL there (it will be replaced by a random URL)
               headers:
                 User-Agent: "bot"
         count: 100

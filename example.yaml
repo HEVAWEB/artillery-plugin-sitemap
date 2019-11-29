@@ -1,5 +1,5 @@
 config:
-  target: "https://toto.test/sitemap.xml" # Renseigner le sitemap ici
+  target: "https://toto.test/sitemap.xml" # Set the sitemap there
   phases:
     - duration: 20
       arrivalRate: 1
@@ -9,7 +9,7 @@ scenarios:
   - flow:
       - loop:
           - get:
-              url: "/" # Il est nécessaire de renseigner une URL (celle-ci sera remplacée par l'URL random)
+              url: "/" # We should assign a useless URL there (it will be replaced by a random URL)
               headers:
                 User-Agent: "bot"
         count: 100
